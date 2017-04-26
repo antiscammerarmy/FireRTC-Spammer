@@ -1,0 +1,10 @@
+C:\Users\donut\Documents\GitHub\FireRTC-Spammer\FireRTCSpammer\bin\Release\FireRTCSpammer.exe.config
+C:\Users\donut\Documents\GitHub\FireRTC-Spammer\FireRTCSpammer\bin\Release\FireRTCSpammer.exe
+C:\Users\donut\Documents\GitHub\FireRTC-Spammer\FireRTCSpammer\bin\Release\FireRTCSpammer.pdb
+C:\Users\donut\Documents\GitHub\FireRTC-Spammer\FireRTCSpammer\bin\Release\WebDriver.dll
+C:\Users\donut\Documents\GitHub\FireRTC-Spammer\FireRTCSpammer\bin\Release\WebDriver.xml
+C:\Users\donut\Documents\GitHub\FireRTC-Spammer\FireRTCSpammer\obj\Release\FireRTCSpammer.csprojResolveAssemblyReference.cache
+C:\Users\donut\Documents\GitHub\FireRTC-Spammer\FireRTCSpammer\obj\Release\FireRTCSpammer.MainForm.resources
+C:\Users\donut\Documents\GitHub\FireRTC-Spammer\FireRTCSpammer\obj\Release\FireRTCSpammer.csproj.GenerateResource.Cache
+C:\Users\donut\Documents\GitHub\FireRTC-Spammer\FireRTCSpammer\obj\Release\FireRTCSpammer.exe
+C:\Users\donut\Documents\GitHub\FireRTC-Spammer\FireRTCSpammer\obj\Release\FireRTCSpammer.pdb
