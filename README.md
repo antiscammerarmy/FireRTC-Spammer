@@ -7,6 +7,9 @@ Download the program here if you want the latest stable version (release version
 # How to Use
 The program will start by asking you, the end user, for your FireRTC (www.firertc.com) credentials. It will then ask for the phone number  you would like to spam and what the interval between each call should be. Using WebDriver, it will then open an instance of Google Chrome, ask the user to hit "Accept" on a dialog box once and start spamming!
 
+# Navigating the Repository
+The only two files that contain my code are FireRTCSpammer\MainForm.cs and FireRTCSpammer\Program.cs. Program.cs is where all the magic with the automation happens and MainForm.cs is simply the form used to authenticate into FireRTC, set the phone number we want to spam, etc.
+
 # Terms and Condtions
 Please do not use this software to repeatedly call places of business or an unknowing victim. I do not condone these behaviors and I am not responsible for what you do with my program. I am also not responsible if your FireRTC account is terminated as a result of this program.
 
