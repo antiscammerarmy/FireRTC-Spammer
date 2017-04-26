@@ -1,0 +1,10 @@
+c:\users\donut\documents\visual studio 2017\Projects\FireRTCSpammer\FireRTCSpammer\bin\Debug\FireRTCSpammer.exe.config
+c:\users\donut\documents\visual studio 2017\Projects\FireRTCSpammer\FireRTCSpammer\bin\Debug\FireRTCSpammer.exe
+c:\users\donut\documents\visual studio 2017\Projects\FireRTCSpammer\FireRTCSpammer\bin\Debug\FireRTCSpammer.pdb
+c:\users\donut\documents\visual studio 2017\Projects\FireRTCSpammer\FireRTCSpammer\bin\Debug\WebDriver.dll
+c:\users\donut\documents\visual studio 2017\Projects\FireRTCSpammer\FireRTCSpammer\bin\Debug\WebDriver.xml
+c:\users\donut\documents\visual studio 2017\Projects\FireRTCSpammer\FireRTCSpammer\obj\Debug\FireRTCSpammer.csprojResolveAssemblyReference.cache
+c:\users\donut\documents\visual studio 2017\Projects\FireRTCSpammer\FireRTCSpammer\obj\Debug\FireRTCSpammer.MainForm.resources
+c:\users\donut\documents\visual studio 2017\Projects\FireRTCSpammer\FireRTCSpammer\obj\Debug\FireRTCSpammer.csproj.GenerateResource.Cache
+c:\users\donut\documents\visual studio 2017\Projects\FireRTCSpammer\FireRTCSpammer\obj\Debug\FireRTCSpammer.exe
+c:\users\donut\documents\visual studio 2017\Projects\FireRTCSpammer\FireRTCSpammer\obj\Debug\FireRTCSpammer.pdb
