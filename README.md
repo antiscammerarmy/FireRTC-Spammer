@@ -1,6 +1,9 @@
 # FireRTC-Spammer
 A simple application that will repeatedly spam a phone number with spoofed phone numbers using FireRTC.
 
+# Non-Developer Download
+Download the program here if you want the latest stable version (release version 0.1): https://www.dropbox.com/s/pc9inxx476amdmg/FireRTC%20Spammer%20Release.zip?dl=0
+
 # How to Use
 The program will start by asking you, the end user, for your FireRTC (www.firertc.com) credentials. It will then ask for the phone number  you would like to spam and what the interval between each call should be. Using WebDriver, it will then open an instance of Google Chrome, ask the user to hit "Accept" on a dialog box once and start spamming!
 
