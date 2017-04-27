@@ -7,6 +7,8 @@ Desktop.ini
 
 *.suo
 *.cache
+*.exe
+*.pdb
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
