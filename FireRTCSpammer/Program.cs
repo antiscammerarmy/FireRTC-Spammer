@@ -127,6 +127,21 @@ namespace FireRTCSpammer
             //Wait three seconds for the phone URL to pop-up.
             Thread.Sleep(3000);
 
+            //Check if FireRTC unregistered itself.
+            try
+            {
+                var connectButton = cd.FindElementsByClassName("row");
+                foreach (IWebElement i in connectButton)
+                {
+                    if (i.GetAttribute("innerText").Contains("Connect"))
+                    {
+                        i.Click();
+                    }
+                }
+                Thread.Sleep(2000);
+            }
+            catch (Exception e) { Console.WriteLine(e.ToString()); } //Cool, FireRTC didn't unregister itself.
+
             //FireRTC wouldn't let us type directly in the phone text field, so this just presses the corresponding numbers on the number pad.
             foreach (char ch in phoneNumber)
             {
