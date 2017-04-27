@@ -42,6 +42,9 @@ namespace FireRTCSpammer
             MainForm mf = new MainForm();
             mf.ShowDialog();
 
+            //If the user enters invalid credentials..
+            tryAuthenticationAgain:
+
             //Start Chrome.
             ChromeDriver cd = new ChromeDriver();
             ShowWindow(handle, SW_SHOW);
@@ -52,6 +55,21 @@ namespace FireRTCSpammer
             cd.FindElement(By.Id("user_email")).SendKeys(email);
             cd.FindElement(By.Id("user_password")).SendKeys(password);
             cd.FindElement(By.Name("commit")).Click();
+
+            Thread.Sleep(3000);
+
+            //After the user has attempted authentication, if the e-mail field to login is still visible, assume we failed the authentication process.
+            try
+            {
+                cd.FindElementById("user_email");
+                cd.Close();
+                ShowWindow(handle, SW_HIDE);
+                MessageBox.Show("You failed to provide the program with proper credentials.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MainForm ms = new MainForm();
+                ms.ShowDialog();
+                goto tryAuthenticationAgain;
+            }
+            catch { } //Good, the user authenticated successfully.
 
             //We will go here after every call completion.
             startSpam:
