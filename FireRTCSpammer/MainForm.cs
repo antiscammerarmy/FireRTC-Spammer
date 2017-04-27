@@ -86,6 +86,7 @@ namespace FireRTCSpammer
                 MessageBox.Show("You must agree to the terms before you can use this program.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
             foreach (TextBox tb in Controls.OfType<TextBox>())
             {
                 if (tb.Text == String.Empty)
@@ -94,18 +95,32 @@ namespace FireRTCSpammer
                     return;
                 }
             }
+
             if (txt_Phone.Text.Contains("-") || txt_Phone.Text.Contains("(") || txt_Phone.Text.Contains(")"))
             {
                 MessageBox.Show("Phone number field contains illegal characters. Please only use numbers, no special characters.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txt_Phone.Focus();
                 return;
             }
+
+            try
+            {
+                Convert.ToInt32(txt_Time.Text);
+            }
+            catch (FormatException fe)
+            {
+                MessageBox.Show("You entered something that wasn't a number in the time interval field.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txt_Time.Focus();
+                return;
+            }
+
             if (Convert.ToInt32(txt_Time.Text) <= 5000)
             {
                 MessageBox.Show("Enter a value larger than 5000.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txt_Time.Focus();
                 return;
             }
+
             if (Convert.ToInt32(txt_Time.Text) <= 30000)
             {
                 DialogResult dr = MessageBox.Show("WARNING: Although this may vary in your case, it is possible that calling someone at this frequency may cause your FireRTC to temporarily stop working after about ten-twenty calls. Continue anyway?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
