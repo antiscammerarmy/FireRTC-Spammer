@@ -140,7 +140,7 @@ namespace FireRTCSpammer
                 }
                 Thread.Sleep(2000);
             }
-            catch (Exception e) { Console.WriteLine(e.ToString()); } //Cool, FireRTC didn't unregister itself.
+            catch { } //Cool, FireRTC didn't unregister itself.
 
             //FireRTC wouldn't let us type directly in the phone text field, so this just presses the corresponding numbers on the number pad.
             foreach (char ch in phoneNumber)
