@@ -124,9 +124,6 @@ namespace FireRTCSpammer
                 hasAuthenticated = true;
             }
 
-            //Wait three seconds for the phone URL to pop-up.
-            Thread.Sleep(3000);
-
             //Check if FireRTC unregistered itself.
             try
             {
@@ -141,6 +138,27 @@ namespace FireRTCSpammer
                 Thread.Sleep(2000);
             }
             catch { } //Cool, FireRTC didn't unregister itself.
+
+            //Check if the current FireRTC account is banned.
+            try
+            {
+                cd.FindElementById("user_email");
+                MessageBox.Show("This FireRTC account has been banned.", "Banned", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                goto tryAuthenticationAgain;
+            }
+            catch { } //The account isn't banned.
+
+            //Wait for FireRTC to connect.
+            while (true)
+            {
+                try
+                {
+                    cd.FindElementById("button_1"); //Check for the keypad number one. If it exists, we have connected to the phone.
+                    break;
+                }
+                catch
+                { }
+            }
 
             //FireRTC wouldn't let us type directly in the phone text field, so this just presses the corresponding numbers on the number pad.
             foreach (char ch in phoneNumber)
