@@ -20,3 +20,5 @@ Please do not use this software to repeatedly call places of business or an unkn
 
 # Why GitHub?
 I'm still a fairly new developer. There are things I would like to see improved in this program; does it break a lot in its current state? Yes. Would I rather it not break a lot? Of course. The goal here is to allow other developers to critique my work and help make it more stable while I learn a thing or two. Hopefully, if you're a new developer, you will find this repository useful in some way or another.
+
+# FULL CREDIT TO THE ORIGINAL DEVELOPER
